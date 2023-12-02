@@ -1,0 +1,132 @@
+/*!
+Theme Name: Framework Theme
+
+Version: 1.0
+
+Author: Aadil Popat
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+@layer base {
+	html {
+		font-family: 'Open Sans', system-ui, sans-serif;
+	}
+}
+
+@layer components {
+	.button-1 {
+		@apply gap-button-1 inline-flex items-center rounded border border-green-100 px-[1.25rem] py-[0.9375rem] text-button text-green-100;
+
+		&:after {
+			content: url('/wp-content/themes/framework-theme/assets/images/button-arrow-right.svg');
+			@apply h-[0.625rem] w-[1.65625rem];
+		}
+
+		&:not([disabled]) {
+			&:hover {
+				@apply shadow-button-1 bg-green-100 text-white-100;
+
+				&:after {
+					content: url('/wp-content/themes/framework-theme/assets/images/button-arrow-right-hover.svg');
+				}
+			}
+		}
+
+		&:active {
+			@apply shadow-none;
+		}
+
+		&:disabled {
+			@apply text-disabled-button-1 border-disabled-button-1;
+			&:after {
+				content: url('/wp-content/themes/framework-theme/assets/images/button-arrow-right-disabled.svg');
+			}
+		}
+	}
+	/*.button-2 {*/
+	/*	@apply text-button-2 text-white-100;*/
+
+	/*	&:after {*/
+	/*		content: '';*/
+	/*		@apply block bg-white-100;*/
+	/*		width: 0;*/
+	/*		height: 1px;*/
+	/*		transition: width 0.4s ease-in;*/
+	/*	}*/
+
+	/*	&:not([disabled]) {*/
+	/*		&:hover:after {*/
+	/*			@apply w-full;*/
+	/*		}*/
+	/*	}*/
+
+	/*	&:not([disabled]) {*/
+	/*		&:active {*/
+	/*			@apply underline;*/
+	/*		}*/
+	/*	}*/
+
+	/*	&:disabled {*/
+	/*		@apply text-disabled-button-2 underline;*/
+	/*	}*/
+	/*}*/
+
+	.button-2 a {
+		@apply text-button-2 text-green-100;
+
+		&:after {
+			content: '';
+			@apply block h-[1px] w-[0] bg-green-100;
+			transition: width 0.4s ease-in;
+		}
+		&:hover:after, &:active:after {
+			@apply w-full;
+		}
+	}
+}
+
+.text-logo {
+	@apply text-button-2 font-bold uppercase leading-[1.625rem] tracking-[0.1875rem] text-green-100;
+}
+
+.extend-right {
+	padding-left: 2rem;
+}
+
+@media (min-width:640px){
+	.extend-right {
+		margin-right: 0;
+		margin-left: calc(50vw - 320px);
+	}
+}
+
+@media (min-width:768px){
+	.extend-right {
+		margin-right: 0;
+		margin-left: calc(50vw - 384px);
+	}
+}
+
+@media (min-width:1024px){
+	.extend-right {
+		margin-right: 0;
+		margin-left: calc(50vw - 512px);
+	}
+}
+
+@media (min-width:1280px){
+	.extend-right {
+		margin-right: 0;
+		margin-left: calc(50vw - 640px);
+	}
+}
+
+@media (min-width:1536px){
+	.extend-right {
+		margin-right: 0;
+		margin-left: calc(50vw - 786px);
+	}
+}

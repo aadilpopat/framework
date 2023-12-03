@@ -3,6 +3,10 @@ module.exports = {
 	content: ['./**/*.php'],
 	plugins: ['prettier-plugin-tailwindcss'],
 	theme: {
+
+		borderWidth: {
+			DEFAULT: '0.063rem',
+		},
 		borderRadius: {
 			DEFAULT: '3.75rem',
 		},
@@ -134,13 +138,20 @@ module.exports = {
 		},
 		spacing: {
 			'0': 0,
-			'0.625': '0.625rem',
-			'1': '1rem',
-			'1.5': '1.5rem',
-			'2.5': '2.5rem',
-			'5': '5rem',
-			'10': '10rem',
-			'button-1': '1.3125rem',
+			'1': '0.063rem',
+			'4': '0.25rem',
+			'8': '0.5rem',
+			'10': '0.625rem',
+			'16': '1rem',
+			'20': '1.25rem',
+			'21': '1.313rem',
+			'24': '1.5rem',
+			'30': '1.88rem',
+			'40': '2.5rem',
+			'60': '3.75rem',
+			'80': '5rem',
+			'120': '7.5rem',
+			'160': '10rem',
 		},
 	},
 };

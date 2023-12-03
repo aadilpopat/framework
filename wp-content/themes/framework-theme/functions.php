@@ -86,6 +86,8 @@ add_action('init', function () {
 	register_nav_menus([
 		// Using array to specify more menus if needed
 		'main-menu' => __('Main Menu'), // Main Navigation
+		'footer-menu-top' => __('Footer Menu - Top'), // Main Footer Navigation
+		'footer-menu-bottom' => __('Footer Menu - Bottom') // Main Footer Navigation
 	]);
 });
 

@@ -1,6 +1,6 @@
-<section id="hero" class="header header-hero bg-primary pt-[6.25rem] mb-10">
+<section id="hero" class="header header-hero bg-primary pt-[6.25rem] mb-160">
 	<div class='container'>
-			<h1 class='text-heading-l max-w-[51.25rem] mb-2.5'><?= get_field(
+			<h1 class='text-heading-l max-w-[51.25rem] mb-40'><?= get_field(
    	'page_title'
    ) ?></h1>
 		</div>

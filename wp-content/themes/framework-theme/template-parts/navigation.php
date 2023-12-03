@@ -1,6 +1,6 @@
 <nav class='container flex justify-between items-baseline'>
 
-	<p class='text-logo py-1.5'>Cottage Retreat</p>
+	<p class='text-logo py-24'>Cottage Retreat</p>
 
 	<?php wp_nav_menu([
  	'theme_location' => 'main-menu',

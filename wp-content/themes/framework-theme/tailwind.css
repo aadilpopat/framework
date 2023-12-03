@@ -14,11 +14,14 @@ Author: Aadil Popat
 	html {
 		font-family: 'Open Sans', system-ui, sans-serif;
 	}
+
+	h1, h2, h3, h4, h5, h6, p, span, a {
+	}
 }
 
 @layer components {
 	.button-1 {
-		@apply gap-button-1 inline-flex items-center rounded border border-green-100 px-[1.25rem] py-[0.9375rem] text-button text-green-100;
+		@apply gap-20 inline-flex items-center rounded border border-green-100 px-[1.25rem] py-[0.9375rem] text-button text-green-100;
 
 		&:after {
 			content: url('/wp-content/themes/framework-theme/assets/images/button-arrow-right.svg');

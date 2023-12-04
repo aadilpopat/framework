@@ -35,6 +35,11 @@ module.exports = {
 			orange: {
 				DEFAULT: '#FF8C21',
 			},
+
+			transparent:{
+				DEFAULT: 'transparent'
+			},
+
 			disabled: {
 				'button-1': '#D9D9D9',
 				'button-2': '#959595',
@@ -52,6 +57,15 @@ module.exports = {
 		},
 		fontSize: {
 			'heading-l': [
+				'2.1875rem',
+				{
+					lineHeight: '2.813rem',
+					letterSpacing: '-0.0625rem',
+					fontWeight: 400,
+				},
+			],
+
+			'desktop-heading-l': [
 				'3.125rem',
 				{
 					lineHeight: '3.75rem',
@@ -61,6 +75,15 @@ module.exports = {
 			],
 
 			'heading-m': [
+				'1.875rem',
+				{
+					lineHeight: '2.375rem',
+					letterSpacing: '-0.0625rem',
+					fontWeight: '400',
+				},
+			],
+
+			'desktop-heading-m': [
 				'2.5rem',
 				{
 					lineHeight: '2.9375rem',
@@ -79,6 +102,14 @@ module.exports = {
 			],
 
 			'heading-xs': [
+				'1.125rem',
+				{
+					lineHeight: '1.625rem',
+					fontWeight: '400',
+				},
+			],
+
+			'desktop-heading-xs': [
 				'1.25rem',
 				{
 					lineHeight: '2.5rem',
@@ -131,10 +162,20 @@ module.exports = {
 			'button-2': [
 				'0.875rem',
 				{
-					lineHeight: 'normal',
+					lineHeight: '1.625rem',
 					fontWeight: '400',
 				},
 			],
+
+			'site-logo-text': [
+				'0.875rem',
+				{
+					lineHeight: '1.625rem',
+					letterSpacing: '0.1875rem',
+					fontWeight: 700,
+				}
+			],
+
 		},
 		spacing: {
 			'0': 0,
@@ -142,14 +183,21 @@ module.exports = {
 			'4': '0.25rem',
 			'8': '0.5rem',
 			'10': '0.625rem',
+			'12': '0.75rem',
+			'15': '0.938rem',
 			'16': '1rem',
 			'20': '1.25rem',
 			'21': '1.313rem',
 			'24': '1.5rem',
+			'26': '1.625rem',
 			'30': '1.88rem',
+			'32': '2rem',
+			'37': '2.313rem',
 			'40': '2.5rem',
+			'50': '3.125rem',
 			'60': '3.75rem',
 			'80': '5rem',
+			'100': '6.25rem',
 			'120': '7.5rem',
 			'160': '10rem',
 		},

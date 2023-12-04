@@ -1,24 +1,21 @@
-<div class='accordion container grid grid-cols-12'>
+<div class='accordion container md:grid md:grid-cols-12'>
 
 	<div class='col-span-5 col-start-2'>
-	<h3 class='text-heading-l text-green-100 mb-20'>Heading text here...</h3>
+	<h3 class='text-heading-large text-green-100 mb-20'>Heading text here...</h3>
 
 	<p class='text-copy text-green-100 mb-[3.12rem]'>Lorem ipsum dolor sit amet consectetur. Malesuada sit consequat
 		tristique consectetur sit tristique amet in. Etiam egestas elit vestibulum commodo.</p>
 	</div>
 
-
-
-
-	<div class='col-span-10 col-start-2 '>
+	<div class='col-span-10 col-start-2'>
 		<?php for($x = 0; $x <= 5; $x++): ?>
 			<details class="mb-30 group">
-				<summary class="grid grid-cols-10 w-full place-items-baseline cursor-pointer border-b border-b-white-300">
-							<span class='col-span-1 text-copy inline-block'><?= sprintf('%02d', $x+1); ?></span>
-							<h5 class='col-span-8 text-heading-xs text-green-100 mb-8'>
+				<summary class="flex flex-nowrap justify-between w-full place-items-baseline cursor-pointer border-b border-b-white-300 md:grid md:grid-cols-10">
+							<span class='text-copy inline-block mr-30 md:mr-0 md:col-span-1'><?= sprintf('%02d', $x+1); ?></span>
+							<h5 class='text-heading-xsmall text-green-100 mb-26 md:col-span-8 md:mb-8'>
 								Lorem ipsum dolor sit amet consectetur adipisicing?
 							</h5>
-						<div class="col-span-1 relative w-21 h-21 flex items-center mr-16" style='grid-column: none;'>
+						<div class="relative w-21 h-21 flex items-center mt-8 ml-37 md:mt-0 md:ml-0 md:mr-16 md:col-span-1 md:grid-col-none">
 							<span class='absolute right-0 opacity-100 group-open:opacity-0'>
 								<?= file_get_contents(get_template_directory(). '/assets/images/plus-icon.svg') ?>
 							</span>
@@ -27,8 +24,8 @@
 							</span>
 						</div>
 				</summary>
-				<div class='grid grid-cols-10'>
-					<div class='col-span-8 col-start-2'>
+				<div class='md:grid md:grid-cols-10'>
+					<div class='md:col-span-8 md:col-start-2'>
 						<p class='mt-30 text-copy text-green-100'>
 							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
 							molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt

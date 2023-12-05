@@ -991,6 +991,30 @@ html {
   height: 100vh;
 }
 
+.h-\[335px\] {
+  height: 335px;
+}
+
+.h-\[371px\] {
+  height: 371px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[489px\] {
+  height: 489px;
+}
+
+.h-\[525px\] {
+  height: 525px;
+}
+
+.h-\[670px\] {
+  height: 670px;
+}
+
 .w-21 {
   width: 1.313rem;
 }
@@ -1269,6 +1293,22 @@ html {
 
   .md\:h-auto {
     height: auto;
+  }
+
+  .md\:h-\[371px\] {
+    height: 371px;
+  }
+
+  .md\:h-\[489px\] {
+    height: 489px;
+  }
+
+  .md\:h-\[525px\] {
+    height: 525px;
+  }
+
+  .md\:h-\[670px\] {
+    height: 670px;
   }
 
   .md\:w-auto {

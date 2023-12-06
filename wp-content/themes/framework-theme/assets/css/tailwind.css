@@ -137,10 +137,6 @@ Author: Aadil Popat
 		}
 	}
 
-	.no-scroll {
-		overflow: hidden;
-	}
-
 	.grid-col-none {
 		grid-column: none;
 	}

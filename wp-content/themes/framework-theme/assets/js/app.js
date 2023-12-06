@@ -11,7 +11,7 @@ const logo = document.querySelector(
 // Add Event Listeners
 menuToggleButton.addEventListener('click', () => {
 	menuToggleButton.classList.toggle('open');
-	document.body.classList.toggle('no-scroll');
+	document.body.classList.toggle('overflow-hidden');
 
 	//Menu
 	if (menu.classList.contains('hidden')) {

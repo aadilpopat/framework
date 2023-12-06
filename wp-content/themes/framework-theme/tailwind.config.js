@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./**/*.php'],
+	content: ['./**/*.php', 'assets/js/**/*.js'],
 	plugins: ['prettier-plugin-tailwindcss'],
 	theme: {
-
 		borderWidth: {
 			DEFAULT: '0.063rem',
 		},
@@ -36,8 +35,8 @@ module.exports = {
 				DEFAULT: '#FF8C21',
 			},
 
-			transparent:{
-				DEFAULT: 'transparent'
+			transparent: {
+				DEFAULT: 'transparent',
 			},
 
 			disabled: {
@@ -173,33 +172,32 @@ module.exports = {
 					lineHeight: '1.625rem',
 					letterSpacing: '0.1875rem',
 					fontWeight: 700,
-				}
+				},
 			],
-
 		},
 		spacing: {
-			'0': 0,
-			'1': '0.063rem',
-			'4': '0.25rem',
-			'8': '0.5rem',
-			'10': '0.625rem',
-			'12': '0.75rem',
-			'15': '0.938rem',
-			'16': '1rem',
-			'20': '1.25rem',
-			'21': '1.313rem',
-			'24': '1.5rem',
-			'26': '1.625rem',
-			'30': '1.88rem',
-			'32': '2rem',
-			'37': '2.313rem',
-			'40': '2.5rem',
-			'50': '3.125rem',
-			'60': '3.75rem',
-			'80': '5rem',
-			'100': '6.25rem',
-			'120': '7.5rem',
-			'160': '10rem',
+			0: 0,
+			1: '0.063rem',
+			4: '0.25rem',
+			8: '0.5rem',
+			10: '0.625rem',
+			12: '0.75rem',
+			15: '0.938rem',
+			16: '1rem',
+			20: '1.25rem',
+			21: '1.313rem',
+			24: '1.5rem',
+			26: '1.625rem',
+			30: '1.88rem',
+			32: '2rem',
+			37: '2.313rem',
+			40: '2.5rem',
+			50: '3.125rem',
+			60: '3.75rem',
+			80: '5rem',
+			100: '6.25rem',
+			120: '7.5rem',
+			160: '10rem',
 		},
 	},
 };

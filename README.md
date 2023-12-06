@@ -8,7 +8,7 @@
 1. Setup a local site pointed to the `root` directory
 
 
-2. Create a Databse and import the included tables from the `db_frameworklocal.sql` file
+2. Create a Database and import the included tables from the `db_frameworklocal.sql` file
 
 
 3. Open the `wp-config.php` file and input your DB Username, Password and Database Name

@@ -20,7 +20,7 @@ npm ci
 npm build
 ```
 
-The Site will be viewable from your local site domain
+The Site will be viewable from your local site domain that you setup in step 1
 
 
 ## Login Details for WP Admin

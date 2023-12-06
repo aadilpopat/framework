@@ -2,13 +2,13 @@
 	<div class='container flex justify-between items-center py-32 md:py-16'>
 		<a href='/' class='text-site-logo text-green-100 relative z-20'>Cottage Retreat</a>
 
-		<button class='mobile-menu-button'>
+		<button class='mobile-menu-button' type="button">
 			<img src='<?= get_template_directory_uri(). '/assets/images/hamburger-menu-icon.svg' ?>'
 				 alt=''
 				 class='relative z-20 md:hidden'>
 		</button>
 
-		<div class='mobile-menu container hidden flex-col justify-between h-screen w-screen absolute inset-0 z-10 pt-[8.188rem] bg-green-100 md:mx-0 md:px-0 md:block md:relative md:bg-transparent md:flex-row md:h-auto md:w-auto md:pt-0'>
+		<div class='mobile-menu container hidden flex-col justify-between h-screen w-screen absolute inset-0 z-10 pt-[8.188rem] pb-40 bg-green-100 md:mx-0 md:px-0 md:pb-0 md:block md:relative md:bg-transparent md:flex-row md:h-auto md:w-auto md:pt-0'>
 			<?php
 				wp_nav_menu([
 					'theme_location' => 'main-menu',

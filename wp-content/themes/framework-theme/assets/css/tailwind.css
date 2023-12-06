@@ -5,45 +5,42 @@ Version: 1.0
 
 Author: Aadil Popat
 */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 @layer base {
 	html {
 		font-family: 'Open Sans', system-ui, sans-serif;
 	}
 
-	.text-heading-large{
+	.text-heading-large {
 		@apply text-heading-l;
 	}
 
-	.text-heading-medium{
+	.text-heading-medium {
 		@apply text-heading-m;
 	}
 
-	.text-heading-xsmall{
+	.text-heading-xsmall {
 		@apply text-heading-xs;
 	}
+
 	.text-site-logo {
 		@apply text-site-logo-text uppercase;
 	}
 
-	.grid-col-none{
-		grid-column: none;
-	}
-
 	@screen md {
-		.text-heading-large{
+		.text-heading-large {
 			@apply text-desktop-heading-l;
 		}
 
-		.text-heading-medium{
+		.text-heading-medium {
 			@apply text-desktop-heading-m;
 		}
 
-		.text-heading-xsmall{
+		.text-heading-xsmall {
 			@apply text-desktop-heading-xs;
 		}
 
@@ -118,43 +115,35 @@ Author: Aadil Popat
 			content: url('/wp-content/themes/framework-theme/assets/images/framework-logo-disabled.svg');
 		}
 	}
-
-	@media (min-width:640px){
-			  .extend-right {
-				  margin-right: 0;
-				  margin-left: calc(50vw - 330px);
-			  }
-		  }
-
-	@media (min-width:768px){
-			  .extend-right {
-				  margin-right: 0;
-				  margin-left: calc(50vw - 394px);
-			  }
-		  }
-
-	@media (min-width:1024px){
-			  .extend-right {
-				  margin-right: 0;
-				  margin-left: calc(50vw - 522px);
-			  }
-		  }
-
-	@media (min-width:1280px){
-			  .extend-right {
-				  margin-right: 0;
-				  margin-left: calc(50vw - 650px);
-			  }
-		  }
-
-	@media (min-width:1536px){
-			  .extend-right {
-				  margin-right: 0;
-				  margin-left: calc(50vw - 776px);
-			  }
-		  }
-
 }
 
+@layer utilities {
+	.extend-right {
+		@apply mr-0;
+		@screen sm {
+			margin-left: calc(50vw - 330px);
+		}
+		@screen md {
+			margin-left: calc(50vw - 394px);
+		}
+		@screen lg {
+			margin-left: calc(50vw - 522px);
+		}
+		@screen xl {
+			margin-left: calc(50vw - 650px);
+		}
+		@screen 2xl {
+			margin-left: calc(50vw - 776px);
+		}
+	}
+
+	.no-scroll {
+		overflow: hidden;
+	}
+
+	.grid-col-none {
+		grid-column: none;
+	}
+}
 
 

@@ -24,7 +24,7 @@
 
 		<?php
 		wp_enqueue_style('app-css', get_template_directory_uri() . '/style.css');
-		//	wp_enqueue_script( 'app-js', get_template_directory_uri() . '/assets/scripts.min.js', 'jquery', '', true );
+        wp_enqueue_script( 'app', get_template_directory_uri() . '/assets/js/app.js', '', '', true );
 
 		wp_head();
 		?>

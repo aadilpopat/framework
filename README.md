@@ -13,11 +13,11 @@
 
 3. Open the `wp-config.php` file and input your DB Username, Password and Database Name
 
-4. Open the root directory in a terminal and run the following commands
+4. Open the `framework-theme` directory in a terminal and run the following commands
 
 ```
 npm ci
-npm build
+npm run build
 ```
 
 The Site will be viewable from your local site domain that you setup in step 1

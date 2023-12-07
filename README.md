@@ -8,7 +8,7 @@
 1. Setup a local site pointed to the `root` directory
 
 
-2. Import the included database
+2. Create a Database and import the included tables from the `db_frameworklocal.sql` file
 
 
 3. Open the `wp-config.php` file and input your DB Username, Password and Database Name
@@ -20,7 +20,7 @@ npm ci
 npm build
 ```
 
-The Site will be viewable from your local site domain
+The Site will be viewable from your local site domain that you setup in step 1
 
 
 ## Login Details for WP Admin

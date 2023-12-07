@@ -79,7 +79,7 @@ Author: Aadil Popat
 	}
 
 	.button-2 a {
-		@apply text-heading-m md:text-button-2;
+		@apply text-heading-m md:text-button-2 block w-fit;
 
 		&:after {
 			content: '';
